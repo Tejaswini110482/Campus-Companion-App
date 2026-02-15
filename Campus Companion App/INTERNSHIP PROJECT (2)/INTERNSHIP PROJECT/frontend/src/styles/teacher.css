@@ -1,0 +1,195 @@
+/* teacher dashboard */
+
+
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* ================= LAYOUT ================= */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    padding: 25px;
+    gap: 25px;
+}
+
+/* ================= SIDEBAR ================= */
+.teacher-navbar {
+    width: 250px;
+    background: linear-gradient(180deg, #1e1b4b, #312e81);
+    color: white;
+    border-radius: 20px;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+
+.teacher-navbar h2 {
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.teacher-navbar ul {
+    list-style: disc;
+    list-style-position: inside;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.teacher-navbar ul li {
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+.teacher-navbar ul li:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(6px);
+}
+
+/* ================= MAIN CONTENT ================= */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background: #f4f6fb;
+  overflow-y: auto;
+}
+
+
+
+.main-content h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1e1b4b;
+  font-weight: 600;
+}
+
+/* ================= FORM BOX ================= */
+.form-box {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Inputs */
+.form-box input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  min-width: 180px;
+  transition: 0.3s ease;
+}
+
+.form-box input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 6px rgba(99, 102, 241, 0.4);
+}
+
+/* Buttons */
+.form-box button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-box button:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+/* ================= SECTION ================= */
+.section {
+  margin-bottom: 45px;
+}
+
+.section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #312e81;
+  position: relative;
+}
+
+.section h3::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #6366f1;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-radius: 5px;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: white;
+  padding: 18px 22px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card b {
+  font-size: 16px;
+  color: #111827;
+}
+
+.card p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 5px;
+}
+
+/* Delete Button */
+.card button {
+  background: #ef4444;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card button:hover {
+  background: #dc2626;
+}

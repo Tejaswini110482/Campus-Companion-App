@@ -1,0 +1,73 @@
+/* Background Container */
+.register-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #5f6ddc, #7a49a5);
+}
+
+/* White Box */
+.register-box {
+  background: white;
+  padding: 40px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Heading */
+.register-box h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* Inputs */
+.register-box input,
+.register-box select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Focus Effect */
+.register-box input:focus,
+.register-box select:focus {
+  border-color: #5f6ddc;
+  box-shadow: 0 0 5px rgba(95, 109, 220, 0.4);
+}
+
+/* Button */
+.register-box button {
+  width: 100%;
+  padding: 12px;
+  background: #5f6ddc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.register-box button:hover {
+  background: #4a55c5;
+}
+
+/* Bottom Text */
+.register-box p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-box span {
+  color: #5f6ddc;
+  cursor: pointer;
+  font-weight: 500;
+}
